@@ -22,7 +22,7 @@ const FallbackSpinner = ({ sx, progress }: any) => {
         ...sx
       }}
     >
-      <img src='/images/logoAr.jpg' alt='' width='100' height='100' />
+      <img src='/images/logoewane.jpg' alt='' width='100' height='100' />
       {!progress ? (
         <CircularProgress disableShrink sx={{ mt: 6 }} />
       ) : (

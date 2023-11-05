@@ -24,9 +24,10 @@ import { tr } from 'date-fns/locale'
 
 const AnalyticsDashboard = () => {
   const [coords, setCorrds] = useState({
-    latitude: 33.589886,
-    longitude: -7.603869
+    latitude: 33.566297,
+    longitude: -7.660822
   })
+  //33.566297, -7.660822
   const [display_name, setName] = useState('')
   const [open, setOpen] = useState(false)
 

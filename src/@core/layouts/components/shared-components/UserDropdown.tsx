@@ -93,7 +93,12 @@ const UserDropdown = (props: Props) => {
           horizontal: 'right'
         }}
       >
-        <Avatar alt='John Doe' onClick={handleDropdownOpen} sx={{ width: 40, height: 40 }} src='/images/logoAr.jpg' />
+        <Avatar
+          alt='John Doe'
+          onClick={handleDropdownOpen}
+          sx={{ width: 40, height: 40 }}
+          src='/images/logoewane.jpg'
+        />
       </Badge>
       <Menu
         anchorEl={anchorEl}
@@ -113,7 +118,7 @@ const UserDropdown = (props: Props) => {
                 horizontal: 'right'
               }}
             >
-              <Avatar alt='John Doe' src='/images/logoAr.jpg' sx={{ width: '2.5rem', height: '2.5rem' }} />
+              <Avatar alt='John Doe' src='/images/logoewane.jpg' sx={{ width: '2.5rem', height: '2.5rem' }} />
             </Badge>
             <Box sx={{ display: 'flex', ml: 3, alignItems: 'flex-start', flexDirection: 'column' }}>
               <Typography sx={{ fontWeight: 600 }}>Arribat Center</Typography>

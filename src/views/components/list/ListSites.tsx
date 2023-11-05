@@ -178,13 +178,17 @@ const ListSites = () => {
   const toggleShowExtraContent10 = () => {
     setShowExtraContent10(!showExtraContent10)
   }
+  const CustomButton = styled(Button)({
+    width: '100%' // Set a fixed width for both buttons
+    // marginBottom: '10px' // Add some space between buttons
+  })
 
   return (
     <div>
       <div>
-        <Button onClick={toggleFirst} variant='contained' style={{ backgroundColor: '#393e46' }}>
+        <CustomButton onClick={toggleFirst} variant='contained' style={{ backgroundColor: '#393e46' }}>
           Bouygues (Anfa 3B2I)
-        </Button>
+        </CustomButton>
         <Collapse in={openFirst}>
           <div style={{ marginLeft: 20 }}>
             {/* #929aab */}
@@ -339,6 +343,101 @@ const ListSites = () => {
                         55961/64
                       </Button>
                       <Collapse in={showExtraContent10}>
+                        <div style={{ marginLeft: 20 }}>
+                          <Typography>Additional Content for Second Collapse</Typography>
+                        </div>
+                      </Collapse>
+                    </div>
+                  )}
+                </div>
+              </Collapse>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div>
+        <CustomButton onClick={toggleFirst} variant='contained' style={{ backgroundColor: '#393e46' }}>
+          Groupe Walili
+        </CustomButton>
+        <Collapse in={openFirst}>
+          <div style={{ marginLeft: 20 }}>
+            {/* #929aab */}
+            <div>
+              <Button onClick={toggleSecond} variant='contained' color='secondary'>
+                Anfa Sky
+              </Button>
+              <Collapse in={openSecond}>
+                <div style={{ marginLeft: 20 }}>
+                  {openSecond && (
+                    <div>
+                      <Button
+                        onClick={toggleShowExtraContent}
+                        variant='contained'
+                        style={{ backgroundColor: '#C0C0C0' }}
+                      >
+                        55609/64
+                      </Button>
+                      <Collapse in={showExtraContent}>
+                        <div style={{ marginLeft: 20 }}>
+                          <Typography>Additional Content for Second Collapse</Typography>
+                        </div>
+                      </Collapse>
+                      <Button
+                        onClick={toggleShowExtraContent1}
+                        variant='contained'
+                        style={{ backgroundColor: '#C0C0C0' }}
+                      >
+                        55610/64
+                      </Button>
+                      <Collapse in={showExtraContent1}>
+                        <div style={{ marginLeft: 20 }}>
+                          <Typography>Additional Content for Second Collapse</Typography>
+                        </div>
+                      </Collapse>
+                      <Button
+                        onClick={toggleShowExtraContent2}
+                        variant='contained'
+                        style={{ backgroundColor: '#C0C0C0' }}
+                      >
+                        55611/64
+                      </Button>
+                      <Collapse in={showExtraContent2}>
+                        <div style={{ marginLeft: 20 }}>
+                          <Typography>Additional Content for Second Collapse</Typography>
+                        </div>
+                      </Collapse>
+                      <Button
+                        onClick={toggleShowExtraContent2}
+                        variant='contained'
+                        style={{ backgroundColor: '#C0C0C0' }}
+                      >
+                        55661/64
+                      </Button>
+                      <Collapse in={showExtraContent2}>
+                        <div style={{ marginLeft: 20 }}>
+                          <Typography>Additional Content for Second Collapse</Typography>
+                        </div>
+                      </Collapse>
+                      <Button
+                        onClick={toggleShowExtraContent2}
+                        variant='contained'
+                        style={{ backgroundColor: '#C0C0C0' }}
+                      >
+                        55796/64
+                      </Button>
+                      <Collapse in={showExtraContent2}>
+                        <div style={{ marginLeft: 20 }}>
+                          <Typography>Additional Content for Second Collapse</Typography>
+                        </div>
+                      </Collapse>
+                      <Button
+                        onClick={toggleShowExtraContent2}
+                        variant='contained'
+                        style={{ backgroundColor: '#C0C0C0' }}
+                      >
+                        55798/64
+                      </Button>
+                      <Collapse in={showExtraContent2}>
                         <div style={{ marginLeft: 20 }}>
                           <Typography>Additional Content for Second Collapse</Typography>
                         </div>
